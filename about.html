@@ -28,7 +28,7 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 40px;
   width: 600px;
-  justify-content: center; 
+  align-content: center; 
 }
 
 .about-section {
@@ -76,7 +76,23 @@ html {
 </style>
 </head>
 <body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>Find yourself in<br> need of a<br>wordsmith?</b></h3>
+  <!-- <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> -->
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+</nav>
 
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">W E L C O M E</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 <div class="about-section w3-blue-gray">
   <h1>Cyrulleann Vigil</h1>
   <p>(801) 867-1880 | cyrulleann@gmail.com</p>
