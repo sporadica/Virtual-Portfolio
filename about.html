@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +29,7 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 40px;
   width: 600px;
-  align-content: center; 
+  justify-content: center; 
 }
 
 .about-section {
@@ -73,29 +74,21 @@ html {
     display: block;
   }
 }
+	
+.btn {
+  background-color: transparent;/* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
 </style>
 </head>
 <body>
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>Find yourself in<br> need of a<br>wordsmith?</b></h3>
-  <!-- <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> -->
-  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">W E L C O M E</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 <div class="about-section w3-blue-gray">
   <h1>Cyrulleann Vigil</h1>
   <p>(801) 867-1880 | cyrulleann@gmail.com</p>
+<button class="btn"><i class="fa fa-home"></i></button>
 </div>
 
 <!-- <h2 style="text-align:center">Our Team</h2> -->
@@ -103,7 +96,7 @@ html {
   <div class="column">
     <div class="card">
       <img src="/portfolio-images/Cyrulleann1.jpg" alt="Cyrulleann Vigil" style="width:100%; height: 70%">
-      <div class="container" style="align-content: center">
+      <div class="container">
         <p class="title">Copywriting &amp; Digital Design</p>
         <p>I am a 26 year old designer, named after the song Cerulean by the Ocean Blue - except my name has the lovely Utah twist. Cerulean is the shade of blue that you might remember from The Devil Wears Prada and found in most standard issue crayon boxes. It's a pleasure to meet you!<br><br>I have an affinity for a well-punctuated sentence, powerful allegories, and minimalistic graphic design. <br><br>I have loved to create since I could form memories, and could often be found writing, illustrating, and stapling together my own picture books. <br><br>Growing up with the introduction of the internet, I quickly discovered the impact my writing could have on others in a contest to win tickets to the Monster Truck Jam, when my persuasive email was chosen as the winner of five tickets to the event. I was ecstatic to find my writing allowed me to bring my whole family on such an outing!<br><br>In present day, I oversee the creation, narration, and presentation of training modules for Marriott Vacation Club Owner Services newcomers, ready to assist with making vacation dreams come true.<br><br>In my spare time, I like to hike the various trails of Utah, explore the vast wilderness of an open world video game or two, and collect insects as a form of real-life Pok&eacute;mon.</p>
  
@@ -111,7 +104,6 @@ html {
       </div>
     </div>
   </div>
-
   <!-- <div class="column">
     <div class="card">
       <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
